@@ -1,0 +1,27 @@
+{
+    "name": "notfoundnl/siteboss-layout",
+    "description": "Adds sortable behavior and ordering to Laravel Eloquent models. Grouping and many to many supported.",
+    "keywords": [
+        "laravel",
+        "frontend",
+        "api",
+        "laravel"
+    ],
+    "license": "GPL3",
+    "authors": [
+        {
+            "name": "NotFound Digital Creativity",
+            "email": "info@notfound.nl"
+        }
+    ],
+    "require": {
+        "php": ">=8.1.0",
+        "illuminate/support": "^7.0|^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "NotFound\\Layout": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
