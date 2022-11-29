@@ -1,6 +1,6 @@
 {
     "name": "notfoundnl/siteboss-layout",
-    "description": "Adds sortable behavior and ordering to Laravel Eloquent models. Grouping and many to many supported.",
+    "description": "Classes for creating responses for the SiteBoss frontend.",
     "keywords": [
         "laravel",
         "frontend",
