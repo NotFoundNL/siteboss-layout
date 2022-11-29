@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\AutoLayout\Elements;
+namespace NotFound\Layout\Elements;
 
-use App\Services\AutoLayout\Elements\Table\LayoutTable;
+use NotFound\Layout\Elements\Table\LayoutTable;
 
 class LayoutWidget extends AbstractContainer
 {

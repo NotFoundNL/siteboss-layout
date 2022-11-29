@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\AutoLayout\Elements\Table;
+namespace NotFound\Layout\Elements\Table;
 
-use App\Services\AutoLayout\Elements\AbstractLayout;
+use NotFound\Layout\Elements\AbstractLayout;
 
 /**
  * LayoutTable

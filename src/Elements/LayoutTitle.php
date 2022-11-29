@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Elements;
+namespace NotFound\Layout\Elements;
 
 class LayoutTitle extends AbstractLayout
 {

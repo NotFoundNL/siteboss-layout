@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Enums;
+namespace NotFound\Layout\Enums;
 
 enum LayoutRequestMethod: string
 {

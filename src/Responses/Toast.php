@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Responses;
+namespace NotFound\Layout\Responses;
 
 /**
  * Toast

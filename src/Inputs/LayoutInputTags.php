@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Inputs;
+namespace NotFound\Layout\Inputs;
 
 use Illuminate\Support\Facades\Log;
 
@@ -19,7 +19,7 @@ class LayoutInputTags extends AbstractInput
      */
     public function setValue(mixed $value): self
     {
-        if (! is_array($value)) {
+        if (!is_array($value)) {
             $this->abortLogSetValueError('InputTags', 'array', $value);
         }
         $this->value = $value;
@@ -50,7 +50,7 @@ class LayoutInputTags extends AbstractInput
 
     public function addItem($value, $readableValue = null): self
     {
-        trigger_error('Method '.__METHOD__.' is deprecated', E_USER_DEPRECATED);
+        trigger_error('Method ' . __METHOD__ . ' is deprecated', E_USER_DEPRECATED);
 
         return $this->addOption($value, $readableValue);
     }

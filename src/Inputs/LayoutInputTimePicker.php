@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Inputs;
+namespace NotFound\Layout\Inputs;
 
 class LayoutInputTimePicker extends AbstractInput
 {

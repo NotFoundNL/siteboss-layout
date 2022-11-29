@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Inputs;
+namespace NotFound\Layout\Inputs;
 
 class LayoutInputImage extends AbstractInput
 {
@@ -10,7 +10,7 @@ class LayoutInputImage extends AbstractInput
 
     public function setValue($value): self
     {
-        if (! is_object($value)) {
+        if (!is_object($value)) {
             $this->abortLogSetValueError('LayoutInputImage', 'object', $value);
         }
         $this->value = $value;

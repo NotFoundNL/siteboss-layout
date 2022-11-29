@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Inputs;
+namespace NotFound\Layout\Inputs;
 
 use App\Services\Assets\Components\AbstractComponent;
 use App\Services\Assets\Components\ComponentContentBlocks;

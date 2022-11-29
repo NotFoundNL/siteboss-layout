@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Validations;
+namespace NotFound\Layout\Validations;
 
 use App\Services\Assets\Components\AbstractComponent;
 

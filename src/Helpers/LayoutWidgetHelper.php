@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\AutoLayout\Helpers;
+namespace NotFound\Layout\Helpers;
 
-use App\Services\AutoLayout\Elements\LayoutBreadcrumb;
-use App\Services\AutoLayout\Elements\LayoutPage;
-use App\Services\AutoLayout\Elements\LayoutWidget;
-use App\Services\AutoLayout\LayoutResponse;
+use NotFound\Layout\Elements\LayoutBreadcrumb;
+use NotFound\Layout\Elements\LayoutPage;
+use NotFound\Layout\Elements\LayoutWidget;
+use NotFound\Layout\LayoutResponse;
 
 class LayoutWidgetHelper
 {

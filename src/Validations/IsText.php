@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Validations;
+namespace NotFound\Layout\Validations;
 
 /**
  * IsText
@@ -14,7 +14,7 @@ class IsText extends AbstractValidation
 {
     public function validate($newValue)
     {
-        if ($newValue != null && ! is_string($newValue)) {
+        if ($newValue != null && !is_string($newValue)) {
             abort(200, __('validation.string', ['attribute' => $this->input->internal]));
         }
 

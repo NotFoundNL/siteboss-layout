@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\AutoLayout;
+namespace NotFound\Layout;
 
-use App\Services\AutoLayout\Inputs\AbstractInput;
+use NotFound\Layout\Inputs\AbstractInput;
 
 class LayoutNotImplemented extends AbstractInput
 {

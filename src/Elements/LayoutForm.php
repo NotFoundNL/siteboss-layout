@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services\AutoLayout\Elements;
+namespace NotFound\Layout\Elements;
 
 use App\Services\Assets\Components\AbstractComponent;
-use App\Services\AutoLayout\Enums\LayoutRequestMethod;
-use App\Services\AutoLayout\Inputs\AbstractInput;
+use NotFound\Layout\Enums\LayoutRequestMethod;
+use NotFound\Layout\Inputs\AbstractInput;
 
 /**
  * LayoutForm

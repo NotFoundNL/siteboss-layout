@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Elements\Table;
+namespace NotFound\Layout\Elements\Table;
 
 /**
  * LayoutTableHeader

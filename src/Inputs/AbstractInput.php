@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\AutoLayout\Inputs;
+namespace NotFound\Layout\Inputs;
 
-use App\Services\AutoLayout\Elements\AbstractLayout;
+use NotFound\Layout\Elements\AbstractLayout;
 use Illuminate\Support\Facades\Log;
 
 abstract class AbstractInput extends AbstractLayout
@@ -37,7 +37,7 @@ abstract class AbstractInput extends AbstractLayout
 
     public function setValue(mixed $value): self
     {
-        if (! is_string($value)) {
+        if (!is_string($value)) {
             $this->abortLogSetValueError('AbstractInput', 'string', $value);
         }
         $this->value = $value;

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services\AutoLayout;
+namespace NotFound\Layout;
 
-use App\Services\AutoLayout\Elements\AbstractLayout;
-use App\Services\AutoLayout\Responses\Action;
+use NotFound\Layout\Elements\AbstractLayout;
+use NotFound\Layout\Responses\Action;
 use Illuminate\Support\Collection;
 
 class LayoutResponse

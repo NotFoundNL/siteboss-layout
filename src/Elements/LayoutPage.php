@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\AutoLayout\Elements;
+namespace NotFound\Layout\Elements;
 
-use App\Services\AutoLayout\LayoutResponse;
+use NotFound\Layout\LayoutResponse;
 
 /**
  * LayoutPage

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services\AutoLayout\Helpers;
+namespace NotFound\Layout\Helpers;
 
 use App\Models\BaseModel;
-use App\Services\AutoLayout\Inputs\LayoutInputDropdown;
+use NotFound\Layout\Inputs\LayoutInputDropdown;
 
 class LayoutInputDropdownHelper
 {
@@ -28,7 +28,7 @@ class LayoutInputDropdownHelper
         protected bool $required = false,
     ) {
         if ($internal === null) {
-            $internal = $model->getTable().'_id';
+            $internal = $model->getTable() . '_id';
         }
 
         $this->dropdown = new LayoutInputDropdown($internal, $label);

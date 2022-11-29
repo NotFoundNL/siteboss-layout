@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\AutoLayout\Inputs;
+namespace NotFound\Layout\Inputs;
 
 class LayoutInputCheckbox extends AbstractInput
 {
@@ -10,7 +10,7 @@ class LayoutInputCheckbox extends AbstractInput
 
     public function setValue($value): self
     {
-        if (! is_bool($value)) {
+        if (!is_bool($value)) {
             $this->abortLogSetValueError('InputCheckbox', 'boolean', $value);
         }
         $this->value = $value;
