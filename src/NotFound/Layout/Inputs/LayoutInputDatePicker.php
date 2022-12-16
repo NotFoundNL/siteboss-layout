@@ -10,7 +10,7 @@ class LayoutInputDatePicker extends AbstractInput
 
     public function setValue(mixed $value): self
     {
-        $this->value = $value;
+        $this->value = $value ?? '';
 
         return $this;
     }

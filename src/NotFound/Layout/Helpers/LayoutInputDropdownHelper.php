@@ -3,6 +3,7 @@
 namespace NotFound\Layout\Helpers;
 
 use App\Models\BaseModel;
+use App\Models\LegacyModel;
 use NotFound\Layout\Inputs\LayoutInputDropdown;
 
 class LayoutInputDropdownHelper
@@ -19,7 +20,7 @@ class LayoutInputDropdownHelper
      * @param $value default value for the dropdown
      */
     public function __construct(
-        protected BaseModel $model,
+        protected BaseModel|LegacyModel $model,
         protected string $label = '',
         protected ?string $internal = null,
         protected string $tableColumnName = 'title',
@@ -35,7 +36,7 @@ class LayoutInputDropdownHelper
         $this->dropdown->setDisabled($disabled);
         $this->dropdown->setRequired($required);
 
-        foreach ($this->model->get() as $modelItem) {
+        foreach ($this->model->whereStatus('PUBLISHED')->get() as $modelItem) {
             $this->dropdown->addItem(
                 $modelItem->{$this->model->getKeyName()},
                 $modelItem->{$tableColumnName}

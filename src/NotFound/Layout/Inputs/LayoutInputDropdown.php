@@ -15,13 +15,6 @@ class LayoutInputDropdown extends AbstractInput
         return $this;
     }
 
-    public function setDescription($description): self
-    {
-        $this->properties->description = $description;
-
-        return $this;
-    }
-
     public function setSearchable(): self
     {
         $this->properties->searchable = true;

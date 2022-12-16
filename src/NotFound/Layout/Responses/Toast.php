@@ -12,6 +12,8 @@ class Toast extends Action
     public function __construct(string $message, string $status = 'ok')
     {
         parent::__construct('Toast');
+
         $this->data->message = $message;
+        $this->data->status = $status;
     }
 }

@@ -3,7 +3,6 @@
 namespace NotFound\Layout\Inputs;
 
 use App\Services\Assets\Components\AbstractComponent;
-use App\Services\Assets\Components\ComponentContentBlocks;
 use Illuminate\Support\Collection;
 
 class LayoutInputContentBlocks extends AbstractInput
@@ -18,7 +17,7 @@ class LayoutInputContentBlocks extends AbstractInput
         if ($value instanceof Collection) {
             $contentBlocksWithValues = [];
 
-            $this->recursivelySetContentBlock($value, $contentBlocksWithValues);
+            $this->setContentBlock($value, $contentBlocksWithValues);
 
             $this->value = $contentBlocksWithValues;
         }
@@ -26,7 +25,7 @@ class LayoutInputContentBlocks extends AbstractInput
         return $this;
     }
 
-    private function recursivelySetContentBlock($contentBlocks, &$contentBlocksWithValues)
+    private function setContentBlock($contentBlocks, &$contentBlocksWithValues)
     {
         foreach ($contentBlocks as $contentBlock) {
             $arrayItems = [];
@@ -37,10 +36,6 @@ class LayoutInputContentBlocks extends AbstractInput
                 /** @var AbstractComponent $component */
                 $tableId = $component->assetItem->table_id;
                 $recordId = $component->getRecordId();
-
-                if ($component instanceof ComponentContentBlocks) {
-                    //TODO: recursive
-                }
                 $arrayItems[] = $component->buildAutoLayoutClass();
             }
 

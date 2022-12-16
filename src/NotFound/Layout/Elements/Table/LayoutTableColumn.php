@@ -17,18 +17,11 @@ class LayoutTableColumn
         return $this;
     }
 
-    public function makeRouterButton(string $to): self
+    public function makeLinkButton(string $to, $external = false): self
     {
         $this->type = 'InputButton';
         $this->properties->link = $to;
-
-        return $this;
-    }
-
-    public function makeLinkButton(string $to): self
-    {
-        $this->type = 'InputButton';
-        $this->properties->href = $to;
+        $this->properties->external = $external;
 
         return $this;
     }

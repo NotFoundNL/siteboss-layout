@@ -10,4 +10,21 @@ class LayoutButton extends AbstractLayout
 
         $this->properties->title = $title;
     }
+
+    public function setSticky(): self
+    {
+        $this->properties->sticky = true;
+
+        return $this;
+    }
+
+    public function addAlternative(string $internal, string $display_name): self
+    {
+        if (!isset($this->properties->alternatives)) {
+            $this->properties->alternatives = [];
+        }
+        $this->properties->alternatives[$internal] = $display_name;
+
+        return $this;
+    }
 }

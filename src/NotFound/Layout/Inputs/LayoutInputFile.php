@@ -2,9 +2,9 @@
 
 namespace NotFound\Layout\Inputs;
 
-class LayoutInputImage extends AbstractInput
+class LayoutInputFile extends AbstractInput
 {
-    protected string $type = 'InputImage';
+    protected string $type = 'InputFile';
 
     protected ?object $value = null;
 

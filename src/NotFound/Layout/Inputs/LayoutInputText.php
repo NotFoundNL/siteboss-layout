@@ -8,10 +8,17 @@ class LayoutInputText extends AbstractInput
 
     protected string $value = '';
 
-    public function setDescription($description): self
+    public function setEndpoint(string $endPoint): self
     {
-        $this->properties->description = $description;
+        $this->properties->endPoint = $endPoint;
 
         return $this;
+    }
+
+    public function getAjaxDataPost(): array
+    {
+        return [
+            'location' => 'test.jpg',
+        ];
     }
 }

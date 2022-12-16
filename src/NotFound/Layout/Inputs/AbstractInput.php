@@ -14,6 +14,13 @@ abstract class AbstractInput extends AbstractLayout
         parent::__construct(type: $this->type);
     }
 
+    public function setDescription($description): self
+    {
+        $this->properties->description = $description;
+
+        return $this;
+    }
+
     public function setRequired(bool $required = true): self
     {
         $this->properties->required = $required;
