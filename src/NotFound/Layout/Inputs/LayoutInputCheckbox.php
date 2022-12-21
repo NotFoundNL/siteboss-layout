@@ -6,7 +6,7 @@ class LayoutInputCheckbox extends AbstractInput
 {
     protected string $type = 'InputCheckbox';
 
-    protected ?bool $value;
+    protected ?bool $value = false;
 
     public function setValue($value): self
     {
