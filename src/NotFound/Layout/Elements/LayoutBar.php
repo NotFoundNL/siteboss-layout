@@ -9,6 +9,12 @@ class LayoutBar extends AbstractContainer
         parent::__construct(type: 'Bar');
     }
 
+    public function removePadding(): self
+    {
+        $this->properties->removePadding = true;
+        return $this;
+    }
+
     public function addBarButton(LayoutBarButton $btn)
     {
         $this->items->add($btn->build());
