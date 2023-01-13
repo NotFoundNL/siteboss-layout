@@ -29,7 +29,7 @@ class LayoutInputDropdownHelper
         protected bool $required = false,
     ) {
         if ($internal === null) {
-            $internal = $model->getTable() . '_id';
+            $internal = $model->getTable().'_id';
         }
 
         $this->dropdown = new LayoutInputDropdown($internal, $label);

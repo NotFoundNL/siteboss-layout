@@ -30,6 +30,7 @@ class LayoutTable extends AbstractLayout
         $this->properties->sort = $sort;
         $this->properties->delete = $delete;
         $this->properties->edit = $edit;
+        $this->properties->editIcon = 'edit';
         $this->properties->create = $create;
     }
 
@@ -51,6 +52,13 @@ class LayoutTable extends AbstractLayout
     public function setTotalItems(int $number)
     {
         $this->properties->totalItems = $number;
+
+        return $this;
+    }
+
+    public function setCustomEditIcon(string $iconName)
+    {
+        $this->properties->editIcon = $iconName;
 
         return $this;
     }

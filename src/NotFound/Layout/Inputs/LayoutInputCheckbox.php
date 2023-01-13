@@ -10,7 +10,7 @@ class LayoutInputCheckbox extends AbstractInput
 
     public function setValue($value): self
     {
-        if (!is_bool($value)) {
+        if (! is_bool($value)) {
             $this->abortLogSetValueError('InputCheckbox', 'boolean', $value);
         }
         $this->value = $value;
