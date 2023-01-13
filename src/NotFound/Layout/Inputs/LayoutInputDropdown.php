@@ -24,7 +24,7 @@ class LayoutInputDropdown extends AbstractInput
 
     public function addItem($value, $readableValue = null): self
     {
-        trigger_error('Method ' . __METHOD__ . ' is deprecated', E_USER_DEPRECATED);
+        trigger_error('Method '.__METHOD__.' is deprecated', E_USER_DEPRECATED);
 
         return $this->addOption($value, $readableValue);
     }

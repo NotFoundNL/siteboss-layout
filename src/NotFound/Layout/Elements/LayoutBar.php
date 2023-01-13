@@ -12,6 +12,7 @@ class LayoutBar extends AbstractContainer
     public function removePadding(): self
     {
         $this->properties->removePadding = true;
+
         return $this;
     }
 

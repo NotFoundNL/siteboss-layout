@@ -20,7 +20,7 @@ class LayoutButton extends AbstractLayout
 
     public function addAlternative(string $internal, string $display_name): self
     {
-        if (!isset($this->properties->alternatives)) {
+        if (! isset($this->properties->alternatives)) {
             $this->properties->alternatives = [];
         }
         $this->properties->alternatives[$internal] = $display_name;

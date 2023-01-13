@@ -2,9 +2,9 @@
 
 namespace NotFound\Layout;
 
+use Illuminate\Support\Collection;
 use NotFound\Layout\Elements\AbstractLayout;
 use NotFound\Layout\Responses\Action;
-use Illuminate\Support\Collection;
 
 class LayoutResponse
 {
