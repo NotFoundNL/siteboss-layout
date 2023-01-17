@@ -56,6 +56,20 @@ class LayoutTable extends AbstractLayout
         return $this;
     }
 
+    public function setDeleteEndpoint(string $endpoint)
+    {
+        $this->properties->deleteEndpoint = $endpoint;
+
+        return $this;
+    }
+
+    public function setMoveEndpoint(string $endpoint)
+    {
+        $this->properties->moveEndpoint = $endpoint;
+
+        return $this;
+    }
+
     public function setCustomEditIcon(string $iconName)
     {
         $this->properties->editIcon = $iconName;
