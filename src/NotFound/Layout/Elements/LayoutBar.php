@@ -16,6 +16,13 @@ class LayoutBar extends AbstractContainer
         return $this;
     }
 
+    public function noBackground(): self
+    {
+        $this->properties->noBackground = true;
+
+        return $this;
+    }
+
     public function addBarButton(LayoutBarButton $btn)
     {
         $this->items->add($btn->build());
