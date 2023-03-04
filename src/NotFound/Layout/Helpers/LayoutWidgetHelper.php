@@ -25,8 +25,6 @@ class LayoutWidgetHelper
 
     /**
      * Will return a fully built LayoutResponse object
-     *
-     * @return object
      */
     public function response(): object
     {
@@ -47,7 +45,6 @@ class LayoutWidgetHelper
      *
      * @param  mixed  $title
      * @param  mixed  $url
-     * @return void
      */
     public function addBreadcrumb($title, $url = null): void
     {
