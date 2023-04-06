@@ -19,6 +19,21 @@ abstract class AbstractLayout
         return $this->type;
     }
 
+    /**
+     * setLocalize
+     * 
+     * This option will mark the element as translatable.
+     * Currently this will not affect the frontend at all.
+     *
+     * @return self
+     */
+    public function setLocalize(): self
+    {
+        $this->properties->localize = true;
+
+        return $this;
+    }
+
     public function build(): object
     {
         return (object) [
