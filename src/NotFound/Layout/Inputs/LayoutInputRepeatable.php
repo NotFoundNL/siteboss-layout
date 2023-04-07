@@ -17,6 +17,12 @@ class LayoutInputRepeatable extends AbstractInput
         $this->properties->template = $form->build()->items;
     }
 
+    public function showDeleted(): self
+    {
+        $this->properties->showDeleted = true;
+        return $this;
+    }
+
     public function setValue(mixed $value): self
     {
         $this->value = $value;
