@@ -2,6 +2,8 @@
 
 namespace NotFound\Layout\Elements\Table;
 
+use stdClass;
+
 /**
  * LayoutTableColumn
  *
@@ -12,8 +14,18 @@ class LayoutTableColumn
     public function __construct(
         public string $value,
         public string $type = 'text',
-        public object $properties = new \stdClass(),
+        public object $properties = new stdClass()
     ) {
+        return $this;
+    }
+
+    public function setToggleEndPoint( string $url ) : self
+    {
+        if( $this->type !== 'checkbox')
+        {
+            throw new \Exception('Can only set toggle endpoint on checkbox type');
+        }
+        $this->properties->toggleEndPoint = $url;
         return $this;
     }
 
