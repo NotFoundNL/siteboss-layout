@@ -8,6 +8,13 @@ class LayoutInputText extends AbstractInput
 
     protected string $value = '';
 
+    public function setRichtext(): self
+    {
+        $this->properties->type = 'richtext';
+
+        return $this;
+    }
+
     public function setEndpoint(string $endPoint): self
     {
         $this->properties->endPoint = $endPoint;
