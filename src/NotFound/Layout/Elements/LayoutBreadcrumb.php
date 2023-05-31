@@ -21,9 +21,9 @@ class LayoutBreadcrumb extends AbstractLayout
      *
      * @return void
      */
-    public function addHome()
+    public function addHome( ?string $title = null, string $link = '/')
     {
-        $this->properties->items[] = (object) ['title' => __('ui.breadcrumb.home'), 'link' => '/'];
+        $this->properties->items[] = (object) ['title' => $title ?? 'Home', 'link' => $link];
     }
 
     /**
