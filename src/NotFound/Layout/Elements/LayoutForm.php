@@ -2,7 +2,6 @@
 
 namespace NotFound\Layout\Elements;
 
-use App\Services\Assets\Components\AbstractComponent;
 use NotFound\Layout\Enums\LayoutRequestMethod;
 use NotFound\Layout\Inputs\AbstractInput;
 
@@ -47,7 +46,7 @@ class LayoutForm extends AbstractContainer
     }
 
     // TODO: think of better solution some time
-    public function addComponent(AbstractComponent $component): void
+    public function addComponent($component): void
     {
         $this->items->add($component->buildAutoLayoutClass());
     }
