@@ -20,6 +20,7 @@ class LayoutInputRepeatable extends AbstractInput
     public function showDeleted(): self
     {
         $this->properties->showDeleted = true;
+
         return $this;
     }
 

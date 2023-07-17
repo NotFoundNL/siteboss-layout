@@ -21,7 +21,7 @@ class LayoutInputText extends AbstractInput
 
         return $this;
     }
-    
+
     public function setRegEx(string $regEx): self
     {
         $this->properties->regEx = $regEx;

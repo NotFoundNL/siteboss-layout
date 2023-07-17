@@ -21,11 +21,9 @@ abstract class AbstractLayout
 
     /**
      * setLocalize
-     * 
+     *
      * This option will mark the element as translatable.
      * Currently this will not affect the frontend at all.
-     *
-     * @return self
      */
     public function setLocalize(): self
     {

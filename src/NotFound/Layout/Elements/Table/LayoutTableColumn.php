@@ -19,13 +19,13 @@ class LayoutTableColumn
         return $this;
     }
 
-    public function setToggleEndPoint( string $url ) : self
+    public function setToggleEndPoint(string $url): self
     {
-        if( $this->type !== 'checkbox')
-        {
+        if ($this->type !== 'checkbox') {
             throw new \Exception('Can only set toggle endpoint on checkbox type');
         }
         $this->properties->toggleEndPoint = $url;
+
         return $this;
     }
 
