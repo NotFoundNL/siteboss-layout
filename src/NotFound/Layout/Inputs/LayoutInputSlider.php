@@ -21,4 +21,14 @@ class LayoutInputSlider extends AbstractInput
 
         return $this;
     }
+
+    public function setDefaultValue(mixed $defaultValue): self
+    {
+        if (! is_int($defaultValue)) {
+            $this->abortLogSetValueError('InputSlider', 'integer', $defaultValue);
+        }
+        $this->properties->defaultValue = $defaultValue;
+
+        return $this;
+    }
 }
