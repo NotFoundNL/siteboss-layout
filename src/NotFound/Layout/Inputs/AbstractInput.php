@@ -52,6 +52,16 @@ abstract class AbstractInput extends AbstractLayout
         return $this;
     }
 
+    public function setDefaultValue(mixed $defaultValue): self
+    {
+        if (! is_string($defaultValue)) {
+            $this->abortLogSetValueError('AbstractInput', 'string', $defaultValue);
+        }
+        $this->properties->defaultValue = $defaultValue;
+
+        return $this;
+    }
+
     protected function abortLogSetValueError(string $class, string $requiredType, mixed $newValue): void
     {
         $message = sprintf(
