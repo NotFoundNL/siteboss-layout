@@ -6,7 +6,7 @@ class LayoutInputDropdown extends AbstractInput
 {
     protected string $type = 'InputDropdown';
 
-    protected string $value = '';
+    protected ?string $value = '';
 
     public function setValue(mixed $value): self
     {
