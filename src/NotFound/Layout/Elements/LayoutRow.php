@@ -9,18 +9,24 @@ class LayoutRow extends AbstractContainer
         parent::__construct(type: 'Row');
     }
 
-    public function addWidget(LayoutWidget $widget)
+    public function addWidget(LayoutWidget $widget): self
     {
         $this->items->add($widget->build());
+
+        return $this;
     }
 
-    public function addForm(LayoutForm $form)
+    public function addForm(LayoutForm $form): self
     {
         $this->items->add($form->build());
+
+        return $this;
     }
 
-    public function addButton(LayoutButton $layoutButton)
+    public function addButton(LayoutButton $layoutButton): self
     {
         $this->items->add($layoutButton->build());
+
+        return $this;
     }
 }
