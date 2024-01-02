@@ -18,29 +18,39 @@ class LayoutPage extends AbstractContainer
         $this->properties->title = $title;
     }
 
-    public function addWidget(LayoutWidget $widget)
+    public function addWidget(LayoutWidget $widget): self
     {
         $this->items->add($widget->build());
+
+        return $this;
     }
 
-    public function addBreadCrumb(LayoutBreadcrumb $breadcrumb)
+    public function addBreadCrumb(LayoutBreadcrumb $breadcrumb): self
     {
         $this->items->add($breadcrumb->build());
+
+        return $this;
     }
 
-    public function addTitle(LayoutTitle $title)
+    public function addTitle(LayoutTitle $title): self
     {
         $this->items->add($title->build());
+
+        return $this;
     }
 
-    public function addBar(LayoutBar $bar)
+    public function addBar(LayoutBar $bar): self
     {
         $this->items->add($bar->build());
+
+        return $this;
     }
 
-    public function addTabs(LayoutTabs $tabs)
+    public function addTabs(LayoutTabs $tabs): self
     {
         $this->items->add($tabs->build());
+
+        return $this;
     }
 
     public function build(): object

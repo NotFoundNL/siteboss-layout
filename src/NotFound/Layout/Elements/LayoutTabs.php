@@ -10,12 +10,14 @@ class LayoutTabs extends AbstractContainer
         $this->properties->padding = false;
     }
 
-    public function addPadding()
+    public function addPadding(): self
     {
         $this->properties->padding = true;
+
+        return $this;
     }
 
-    public function addTab(LayoutTab $tab)
+    public function addTab(LayoutTab $tab): self
     {
         $this->items->add($tab->build());
 

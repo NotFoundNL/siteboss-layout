@@ -23,23 +23,31 @@ class LayoutBar extends AbstractContainer
         return $this;
     }
 
-    public function addBarButton(LayoutBarButton $btn)
+    public function addBarButton(LayoutBarButton $btn): self
     {
         $this->items->add($btn->build());
+
+        return $this;
     }
 
-    public function addPager(LayoutPager $pager)
+    public function addPager(LayoutPager $pager): self
     {
         $this->items->add($pager->build());
+
+        return $this;
     }
 
-    public function addSearchBox(LayoutSearchBox $searchBox)
+    public function addSearchBox(LayoutSearchBox $searchBox): self
     {
         $this->items->add($searchBox->build());
+
+        return $this;
     }
 
-    public function addText(LayoutText $text)
+    public function addText(LayoutText $text): self
     {
         $this->items->add($text->build());
+
+        return $this;
     }
 }

@@ -46,8 +46,10 @@ class LayoutWidgetHelper
      * @param  mixed  $title
      * @param  mixed  $url
      */
-    public function addBreadcrumb($title, $url = null): void
+    public function addBreadcrumb($title, $url = null): self
     {
         $this->breadcrumb->addItem($title, $url);
+
+        return $this;
     }
 }

@@ -21,9 +21,11 @@ class LayoutBreadcrumb extends AbstractLayout
      *
      * @return void
      */
-    public function addHome(string $title = null, string $link = '/')
+    public function addHome(string $title = null, string $link = '/'): self
     {
         $this->properties->items[] = (object) ['title' => $title ?? 'Home', 'link' => $link];
+
+        return $this;
     }
 
     /**
@@ -33,8 +35,10 @@ class LayoutBreadcrumb extends AbstractLayout
      * @param  mixed  $link      Link (optional) Last item should always be the current path en should not link anywhere.
      * @return void
      */
-    public function addItem(string $title, string $link = null)
+    public function addItem(string $title, string $link = null): self
     {
         $this->properties->items[] = (object) ['title' => $title, 'link' => $link];
+
+        return $this;
     }
 }
