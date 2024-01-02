@@ -34,14 +34,18 @@ class LayoutTable extends AbstractLayout
         $this->properties->create = $create;
     }
 
-    public function addHeader(LayoutTableHeader $header)
+    public function addHeader(LayoutTableHeader $header): self
     {
         $this->properties->headers[] = $header;
+
+        return $this;
     }
 
-    public function addRow(LayoutTableRow $row)
+    public function addRow(LayoutTableRow $row): self
     {
         $this->properties->rows[] = $row;
+
+        return $this;
     }
 
     /**
