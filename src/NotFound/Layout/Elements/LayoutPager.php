@@ -4,7 +4,7 @@ namespace NotFound\Layout\Elements;
 
 class LayoutPager extends AbstractLayout
 {
-    public function __construct(int $totalItems, int $itemsPerPage = null)
+    public function __construct(int $totalItems, ?int $itemsPerPage = null)
     {
         parent::__construct(type: 'Pager');
 

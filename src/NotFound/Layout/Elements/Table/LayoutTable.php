@@ -14,11 +14,11 @@ class LayoutTable extends AbstractLayout
     /**
      * __construct
      *
-     * @param  array  $headers   An array of LayoutTableHeader elements.
-     * @param  array  $rows      An array of LayoutTableRow elements.
-     * @param  bool  $sort       Will we be able to sort rows on the frontend.
-     * @param  bool  $delete     Will we be able to delete rows on the frontend.
-     * @param  bool  $edit       Will we be able to edit rows on the frontend.
+     * @param  array  $headers  An array of LayoutTableHeader elements.
+     * @param  array  $rows  An array of LayoutTableRow elements.
+     * @param  bool  $sort  Will we be able to sort rows on the frontend.
+     * @param  bool  $delete  Will we be able to delete rows on the frontend.
+     * @param  bool  $edit  Will we be able to edit rows on the frontend.
      * @return void
      */
     public function __construct(bool $sort = true, bool $delete = true, bool $edit = true, bool $create = true)
@@ -51,7 +51,7 @@ class LayoutTable extends AbstractLayout
     /**
      * Used for pagination to display the number of pages in total
      *
-     * @param $number number of items
+     * @param  $number  number of items
      */
     public function setTotalItems(int $number)
     {

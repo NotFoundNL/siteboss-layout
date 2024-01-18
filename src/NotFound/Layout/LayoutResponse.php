@@ -14,7 +14,7 @@ class LayoutResponse
 
     private ?string $nextRequest = null;
 
-    public function __construct(AbstractLayout $ui = null, Action $action = null)
+    public function __construct(?AbstractLayout $ui = null, ?Action $action = null)
     {
         $this->actions = new Collection();
         $this->elements = new Collection();

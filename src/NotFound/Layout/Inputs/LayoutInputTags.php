@@ -14,7 +14,7 @@ class LayoutInputTags extends AbstractInput
      * Set the current value of the input select
      * The value must be an array of identifiers, most likely ids
      *
-     * @param  int[]  $value array of identifiers
+     * @param  int[]  $value  array of identifiers
      * @return void
      */
     public function setValue(mixed $value): self
