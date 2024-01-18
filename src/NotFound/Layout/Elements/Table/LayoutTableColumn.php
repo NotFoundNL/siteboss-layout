@@ -12,7 +12,7 @@ use stdClass;
 class LayoutTableColumn
 {
     public function __construct(
-        public string $value,
+        public string|bool $value,
         public string $type = 'text',
         public object $properties = new stdClass()
     ) {

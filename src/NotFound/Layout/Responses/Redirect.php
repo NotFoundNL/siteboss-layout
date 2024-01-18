@@ -12,7 +12,7 @@ class Redirect extends Action
     /**
      * __construct
      *
-     * @param  mixed  $target The path to navigate to (without locale!)
+     * @param  mixed  $target  The path to navigate to (without locale!)
      * @return void
      */
     public function __construct(string $target)
