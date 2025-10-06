@@ -14,7 +14,7 @@ class LayoutTableColumn
     public function __construct(
         public string|bool $value,
         public string $type = 'text',
-        public object $properties = new stdClass()
+        public object $properties = new stdClass
     ) {
         return $this;
     }

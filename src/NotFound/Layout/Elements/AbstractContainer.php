@@ -14,11 +14,11 @@ abstract class AbstractContainer extends AbstractLayout
 {
     protected Collection $items;
 
-    public function __construct(object $properties = new \stdClass(), string $type = '')
+    public function __construct(object $properties = new \stdClass, string $type = '')
     {
         parent::__construct($properties, $type);
 
-        $this->items = new Collection();
+        $this->items = new Collection;
     }
 
     public function build(): object

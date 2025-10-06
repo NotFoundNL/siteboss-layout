@@ -19,7 +19,7 @@ class LayoutWidgetHelper
     ) {
         $this->widget = new LayoutWidget($this->widgetTitle);
 
-        $this->breadcrumb = new LayoutBreadcrumb();
+        $this->breadcrumb = new LayoutBreadcrumb;
         $this->breadcrumb->addHome();
     }
 
@@ -34,7 +34,7 @@ class LayoutWidgetHelper
         $page->addBreadCrumb($this->breadcrumb);
         $page->addWidget($this->widget);
 
-        $response = new LayoutResponse();
+        $response = new LayoutResponse;
         $response->addUIElement($page);
 
         return $response->build();

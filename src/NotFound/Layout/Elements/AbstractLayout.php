@@ -9,10 +9,9 @@ namespace NotFound\Layout\Elements;
 abstract class AbstractLayout
 {
     public function __construct(
-        public object $properties = new \stdClass(),
+        public object $properties = new \stdClass,
         protected string $type = '',
-    ) {
-    }
+    ) {}
 
     public function type(): string
     {

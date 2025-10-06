@@ -14,7 +14,7 @@ class LayoutTableRow
     public function __construct(
         public int $id,
         public string $link = '',
-        public object $properties = new \stdClass(),
+        public object $properties = new \stdClass,
     ) {
         return $this;
     }

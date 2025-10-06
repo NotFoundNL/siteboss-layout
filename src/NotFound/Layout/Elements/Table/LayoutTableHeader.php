@@ -13,7 +13,7 @@ class LayoutTableHeader
         public string $title,
         public string $internal,
         public string $type = 'text',
-        public object $properties = new \stdClass(),
+        public object $properties = new \stdClass,
 
     ) {
         return $this;

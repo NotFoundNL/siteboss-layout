@@ -16,8 +16,8 @@ class LayoutResponse
 
     public function __construct(?AbstractLayout $ui = null, ?Action $action = null)
     {
-        $this->actions = new Collection();
-        $this->elements = new Collection();
+        $this->actions = new Collection;
+        $this->elements = new Collection;
 
         if ($action) {
             $this->actions->add($action);
@@ -49,7 +49,7 @@ class LayoutResponse
             return (object) ['status' => 'error'];
         }
 
-        $response = new \stdClass();
+        $response = new \stdClass;
         $response->status = 'ok';
 
         if ($this->elements->isNotEmpty()) {

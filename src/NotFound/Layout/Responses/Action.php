@@ -14,6 +14,5 @@ abstract class Action
     public function __construct(
         public string $type,
         public object $data = new \stdClass
-    ) {
-    }
+    ) {}
 }
