@@ -21,9 +21,11 @@ class LayoutTable extends AbstractLayout
      * @param  bool  $edit  Will we be able to edit rows on the frontend.
      * @param  bool  $create  Will we be able to create rows on the frontend.
      * @param  bool  $duplicate  Will we be able to duplicate rows on the frontend.
+     * @param  bool  $archive  Will we be able to archive rows on the frontend.
+     * @param  bool  $archiveView  Current view is the archive view.
      * @return void
      */
-    public function __construct(bool $sort = true, bool $delete = true, bool $edit = true, bool $create = true, bool $duplicate = false, bool $archive = false)
+    public function __construct(bool $sort = true, bool $delete = true, bool $edit = true, bool $create = true, bool $duplicate = false, bool $archive = false, bool $archiveView = false)
     {
         parent::__construct(type: 'Table');
 
@@ -36,6 +38,7 @@ class LayoutTable extends AbstractLayout
         $this->properties->create = $create;
         $this->properties->duplicate = $duplicate;
         $this->properties->archive = $archive;
+        $this->properties->archiveView = $archiveView;
     }
 
     public function addHeader(LayoutTableHeader $header): self
