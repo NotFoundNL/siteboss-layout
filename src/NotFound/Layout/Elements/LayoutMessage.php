@@ -16,6 +16,15 @@ class LayoutMessage extends AbstractLayout
         $this->properties->intro = $this->setIntro($type);
 
         $this->properties->text = $text;
+
+        return $this;
+    }
+
+    public function setIntroText(string $text): self
+    {
+        $this->properties->intro = $text;
+
+        return $this;
     }
 
     private function setIntro(string $type): string
