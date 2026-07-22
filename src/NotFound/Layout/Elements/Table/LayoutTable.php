@@ -19,9 +19,11 @@ class LayoutTable extends AbstractLayout
      * @param  bool  $sort  Will we be able to sort rows on the frontend.
      * @param  bool  $delete  Will we be able to delete rows on the frontend.
      * @param  bool  $edit  Will we be able to edit rows on the frontend.
+     * @param  bool  $create  Will we be able to create rows on the frontend.
+     * @param  bool  $duplicate  Will we be able to duplicate rows on the frontend.
      * @return void
      */
-    public function __construct(bool $sort = true, bool $delete = true, bool $edit = true, bool $create = true)
+    public function __construct(bool $sort = true, bool $delete = true, bool $edit = true, bool $create = true, bool $duplicate = false, bool $archive = false)
     {
         parent::__construct(type: 'Table');
 
@@ -32,6 +34,8 @@ class LayoutTable extends AbstractLayout
         $this->properties->edit = $edit;
         $this->properties->editIcon = 'edit';
         $this->properties->create = $create;
+        $this->properties->duplicate = $duplicate;
+        $this->properties->archive = $archive;
     }
 
     public function addHeader(LayoutTableHeader $header): self
